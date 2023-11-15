@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.30"
+        android:scaleType="centerCrop"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/casifinal" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Tour of Sing"
+        android:textColor="@color/white"
+        android:textSize="75px"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_titulo"
+        app:layout_constraintEnd_toStartOf="@+id/right_titulo"
+        app:layout_constraintStart_toStartOf="@+id/left_titulo"
+        app:layout_constraintTop_toTopOf="@+id/top_titulo" />
+
+    <TextView
+        android:id="@+id/TOStextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Tour of Sing"
+        android:textColor="@color/titulos"
+        android:textSize="75px"
+        android:transitionName="TOSTextViewTrans"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_titulo"
+        app:layout_constraintEnd_toStartOf="@+id/right_titulo"
+        app:layout_constraintStart_toStartOf="@+id/left_titulo"
+        app:layout_constraintTop_toTopOf="@+id/top_titulo" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="177dp"
+        android:layout_height="49dp"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/top_boton"
+        app:layout_constraintEnd_toStartOf="@+id/right_titulo"
+        app:layout_constraintStart_toStartOf="@+id/left_titulo"
+        app:layout_constraintTop_toTopOf="@+id/bottom_boton" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="179dp"
+        android:layout_height="41dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/pass_name"
+        android:drawableTint="@color/white"
+        android:ems="10"
+        android:hint="  Contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/bot_pass"
+        app:layout_constraintEnd_toStartOf="@+id/right_titulo"
+        app:layout_constraintStart_toStartOf="@+id/left_titulo" />
+
+    <TextView
+        android:id="@+id/olvide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olvide mi contraseña"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/top_boton"
+        app:layout_constraintEnd_toStartOf="@+id/right_titulo"
+        app:layout_constraintStart_toStartOf="@+id/left_titulo"
+        app:layout_constraintTop_toTopOf="@+id/bot_recuerdame" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="181dp"
+        android:layout_height="19dp"
+        android:gravity="center"
+        android:text="No tienes una cuenta. Registrate"
+        android:textColor="@color/white"
+        android:textSize="30px"
+        app:layout_constraintBottom_toTopOf="@+id/bot_reg"
+        app:layout_constraintEnd_toStartOf="@+id/right_titulo"
+        app:layout_constraintStart_toStartOf="@+id/left_titulo"
+        app:layout_constraintTop_toTopOf="@+id/bottom_boton" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="181dp"
+        android:layout_height="41dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/user_name"
+        android:drawableTint="@color/white"
+        android:ems="10"
+        android:hint="  Correo"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/bot_correo"
+        app:layout_constraintEnd_toStartOf="@+id/right_titulo"
+        app:layout_constraintStart_toStartOf="@+id/left_titulo"
+        app:layout_constraintTop_toTopOf="@+id/top_correo" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="177dp"
+        android:layout_height="37dp"
+        android:text="Recuerdame"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/bot_recuerdame"
+        app:layout_constraintEnd_toStartOf="@+id/right_titulo"
+        app:layout_constraintStart_toStartOf="@+id/left_titulo"
+        app:layout_constraintTop_toTopOf="@+id/bot_pass" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.41" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/left_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/right_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_boton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.81" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bot_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bot_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.59" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_correo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.51" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bot_recuerdame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <ImageView
+        android:id="@+id/bolaImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginBottom="10dp"
+        android:transitionName="bolaImageViewTrans"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bola_removebg" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/estrella_abajo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/estrella_abajo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
